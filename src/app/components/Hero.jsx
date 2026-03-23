@@ -61,15 +61,15 @@ const Hero = () => {
             }}
           >
             <Image
-              src={"/person.png"}
+              src={"/hai.png"}
               alt="Person Image"
               width={400}
               height={400}
               priority={true}
-              className="h-auto w-37.5 "
+              className="h-auto w-37.5 max-md:w-20 "
             />
             <motion.span
-              className="absolute -right-20 top-2 -translate-y-1/2 text-3xl font-semibold text-zinc-800 dark:text-zinc-100"
+              className="absolute -left-20 top-10 max-md:text-2xl -translate-y-1/2 text-3xl font-semibold text-zinc-800 dark:text-zinc-100"
               initial={{ scale: 0 }}
               animate={{
                 opacity: buttonHover ? 0 : 1,
@@ -106,7 +106,7 @@ const Hero = () => {
              initial={{ opacity: 0, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
-              href="#"
+              href={icon.link}
               key={icon.id}
               className="hover:bg-red-500 hover:text-white transition-colors rounded-lg"
             >
@@ -118,12 +118,12 @@ const Hero = () => {
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.7 }}
-          href="#"
-          className="mx-auto mt-15 block w-max rounded-lg bg-red-400 px-3 py-1 font-light capitalize tracking-wider text-white hover:bg-red-500 transition-colors"
+          href="https://wa.me/6282333007077?text=Halo%20Maidi,%20saya%20tertarik%20dengan%20portfolio%20Anda"
+          className="mx-auto mt-15 block w-max rounded-lg bg-green-400 px-3 py-1 font-light capitalize tracking-wider text-white hover:bg-red-500 transition-colors"
           onMouseEnter={() => setbuttonHover(true)}
           onMouseLeave={() => setbuttonHover(false)}
         >
-          Talk to me
+          Chat on WhatsApp
         </motion.a>
       </div>
     </div>

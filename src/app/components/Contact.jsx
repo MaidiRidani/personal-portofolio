@@ -38,7 +38,7 @@ export const Contact = () => {
         >
           <Image
             className="w-100 rounded-md opacity-80"
-            src={"/contact.gif"}
+            src={"/write.gif"}
             alt="Contact Image"
             width={400}
             height={400}

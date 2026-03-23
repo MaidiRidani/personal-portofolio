@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { motion, spring } from "framer-motion";
+import Link from "next/link";
 
 const Project = ({ data, Index }) => {
   const [Show, setShow] = useState(false);
@@ -31,6 +32,11 @@ const Project = ({ data, Index }) => {
         <p className="text-justify text-gray-500 first-letter:pl-2 dark:text-white transition-colors">
           {data.desc}
         </p>
+        <Link href={`/projects/${data.id}`}>
+          <button className="mt-3 px-3 py-1 bg-yellow-400 text-black text-sm rounded dark:bg-red-200">
+            View Detail
+          </button>
+          </Link>
       </motion.div>
     </motion.div>
   );

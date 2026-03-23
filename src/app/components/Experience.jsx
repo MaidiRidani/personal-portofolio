@@ -23,11 +23,11 @@ export const experience = () => {
     <div id="experience" className="relative py-20">
       <Heading text={"Experience & Education"} />
       <Image
-        src={"/education.png"}
+        src={"/experience.png"}
         alt={"Experience Image"}
         width={400}
         height={400}
-        className="absolute -top-4 right-0 opacity-80 max-lg:hidden "
+        className="absolute h-auto w-60 top-8 right-20 opacity-80 max-lg:hidden "
       ></Image>
       <div
         ref={containerRef}

@@ -17,7 +17,7 @@ const About = () => {
       <div className="w-full flex items-center justify-between max-md:justify-center">
         <Image
           className="w-75 max-lg:w-50 max-md:hidden "
-          src={"/about-me.png"}
+          src={"/aboutme.png"}
           alt="About Image"
           width={400}
           height={400}
