@@ -85,7 +85,7 @@ const Hero = () => {
             My Name is Maidi Ridani
           </h1>
           <p className="text-lg tracking-wider text-gray-700 dark:text-gray-200 transition-colors">
-            Robotics & IoT Engineer in Progress{" "}
+            Robotics & IoT Engineer
           </p>
           <p className="text-sm font-bold text-gray-700 whitespace-pre-line max-w-2xl mx-auto leading-relaxed text-center dark:text-white transition-colors">
             I build systems - not just code.

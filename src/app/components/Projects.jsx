@@ -21,7 +21,7 @@ export const Projects = () => {
   }, [Index]);
 
   return (
-    <div id="projects" className="min-h-screen py-5 sm:py-20">
+    <div id="projects" className="my-20 sm:py-20 ">
       <Heading text={"Projects"}></Heading>
       <div className="flex flex-wrap items-center justify-center gap-2 py-0 pb-10 sm:justify-between sm:gap-4 sm:py-10">
         {projectsButton.map((text, i) => (

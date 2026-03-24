@@ -5,7 +5,7 @@ import {motion} from 'framer-motion'
 
 export const PricingPlans = () => {
   return (
-    <div id="pricing" className="py-20">
+    <div id="pricing" className="py-10">
       <Heading text={"Pricing Plans"}></Heading>
       <div className="h-full flex max-lg:flex-col items-center justify-between gap-8">
         {pricingPlans.map((plan, i) => (

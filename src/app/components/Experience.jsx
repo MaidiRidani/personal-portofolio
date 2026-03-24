@@ -20,10 +20,10 @@ export const experience = () => {
   const scrollY = useSpring(scrollYProgress, {stiffness:200, damping:20})
   
   return (
-    <div id="experience" className="relative py-20">
+    <div id="experience" className=" relative py-20">
       <Heading text={"Experience & Education"} />
       <Image
-        src={"/experience.png"}
+        src={"/experiencev2.png"}
         alt={"Experience Image"}
         width={400}
         height={400}
@@ -76,7 +76,7 @@ export const experience = () => {
               </span>
             </motion.div>
             <div
-              className={`absolute top-25 w-14 border border-gray-300 rounded-full aspect-square grid place-items-center text-red-400 font-light -translate-y-1/2 z-10 bg-white ${
+              className={`absolute top-25 w-14 border border-gray-300 rounded-full aspect-square grid place-items-center font-bold text-red-400  -translate-y-1/2 z-10 bg-white ${
                 i % 2 === 0
                   ? "left-full -translate-x-1/2 max-lg:left-1/2"
                   : "right-full translate-x-1/2 max-lg:right-1/2"

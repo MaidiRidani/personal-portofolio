@@ -5,6 +5,7 @@ import { arrowIcons } from "../assets"
 
 
 export const Navbar = ({id}) => {
+  console.log(id);
     const [open, setOpen] = useState(true)
     const [isMobile, setIsMobile] = useState(false)
     const timeoutRef = useRef(null)

@@ -17,7 +17,7 @@ const About = () => {
       <div className="w-full flex items-center justify-between max-md:justify-center">
         <Image
           className="w-75 max-lg:w-50 max-md:hidden "
-          src={"/aboutme.png"}
+          src={"/aboutmev2.png"}
           alt="About Image"
           width={400}
           height={400}
@@ -30,7 +30,7 @@ const About = () => {
             {aboutText}
           </p>
           <a
-            href="/nick-cv.pdf"
+            href="/CV-2025-november.pdf"
             download={""}
             className="w-max flex items-center gap-x-2 mt-6 rounded-full border border-gray-300 bg-red-400 px-3 py-2 font-light text-white hover:bg-red-500 transition-colors"
           >

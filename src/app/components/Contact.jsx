@@ -27,7 +27,7 @@ const handleSubmit = (e) => {
 
 export const Contact = () => {
   return (
-    <div id="contact" className="h-screen py-0 sm:py-20">
+    <div id="contact" className="py-0 sm:py-20">
       <Heading text={"Getin touch"}></Heading>
       <div className="w-full h-full my-auto flex max-lg:flex-col items-center justify-between max-lg::justify-center gap-x-20 max-lg::gap-x-0 gap-y-20">
         <motion.div

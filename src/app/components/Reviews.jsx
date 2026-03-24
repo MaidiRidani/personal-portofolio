@@ -30,7 +30,7 @@ export const Reviews = () => {
   } ,[Index])
 
   return (
-    <div id="reviews" className="my-20">
+    <div id="reviews" className=" my-20">
       <div>
         <Heading text={"Reviews"}></Heading>
         <div className="flex flex-col items-center justify-center">

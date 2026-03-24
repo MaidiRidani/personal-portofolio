@@ -8,7 +8,7 @@ import { questions } from "@/app/assets"
 export const Questions = () => {
 
   return (
-    <div id='questions' className='py-0 pt-35 sm:py-20'>
+    <div id='questions' className='py-0 pt-50 sm:py-20'>
         <Heading text={"Questions & Answer"}></Heading>
         <div>
             <ul className='flex flex-col gap-y-3'>
