@@ -82,7 +82,7 @@ const Hero = () => {
             </motion.span>
           </motion.div>
           <h1 className="text-center text-3xl font-bold tracking-wider text-gray-500 max-sm:text-2xl dark:text-white transition-colors">
-            My Name is Maidi Ridani
+            I'm Maidi
           </h1>
           <p className="text-lg tracking-wider text-gray-700 dark:text-gray-200 transition-colors">
             Robotics & IoT Engineer

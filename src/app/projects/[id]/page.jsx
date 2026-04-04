@@ -1,10 +1,13 @@
 import Image from "next/image";
 import { projectDetails } from "@/app/assets/projects";
+import { projectsData} from "../../assets";
 
 export default async function Page({ params }) {
   const { id } = await params;
   const project = projectDetails[id];
-
+  const projectMeta = projectsData.find(p => p.id === id);
+  console.log(5);
+  console.log(projectMeta);
   if (!project) {
     return <div className="p-10">Project not found</div>;
   }
@@ -19,7 +22,7 @@ export default async function Page({ params }) {
         </p>
 
         <h1 className="text-3xl font-bold mt-1">
-          {project.title}
+          {projectMeta.name}
         </h1>
 
         {/* OVERVIEW */}
@@ -29,6 +32,7 @@ export default async function Page({ params }) {
           ))}
         </div>
       </div>
+
 
       {/* PREVIEW */}
       <div>
@@ -47,6 +51,33 @@ export default async function Page({ params }) {
           />
         </div>
       </div>
+
+        {/* DESCRIPTION */}
+        {project.description && (
+        <div className="mt-6 max-w-2xl">
+          <h2 className="text-xl font-semibold mb-2">
+            {project.description[0]}
+          </h2>
+          <ul className="list-disc list-inside text-gray-500 space-y-1">
+            {project.description.slice(1).map((item, i) => (
+              <li key={i}>{item}</li>
+            ))}
+          </ul>
+        </div>
+        )}
+        {/* HARDWARE */}
+        {project.hardware && (
+        <div className="mt-6 max-w-2xl">
+          <h2 className="text-xl font-semibold mb-2">
+            {project.hardware[0]}
+          </h2>
+          <ul className="list-disc list-inside text-gray-500 space-y-1">
+            {project.hardware.slice(1).map((item, i) => (
+              <li key={i}>{item}</li>
+            ))}
+          </ul>
+        </div>
+        )}
 
       {/* PROBLEM */}
       {project.problem && (
@@ -104,7 +135,7 @@ export default async function Page({ params }) {
         </h2>
 
         <div className="mt-4 flex gap-2 flex-wrap">
-          {project.tech.map((t, i) => (
+          {projectMeta.tech.map((t, i) => (
             <span
               key={i}
               className="px-3 py-1 rounded-full text-sm border border-yellow-400/40 text-gray-700 dark:text-gray-300"
