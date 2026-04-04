@@ -202,6 +202,38 @@ export const reviewsData = [
       "Penjelasannya lebih ke praktik, jadi gampang kebayang cara kerjanya.",
     stars: [1, 1, 1, 1, 1],
   },
+    {
+    id: 'review-6',
+    image: '/reviews/client-6.png',
+    name: 'Renata Afrilia A.',
+    comment:
+      "Di ajarin di sekolah sama Kak Dani jadi asik dan enggak ngebosenin banyak praktek. Kak Dani kalau ngajarin gampang dimengerti.",
+    stars: [1, 1, 1, 1, 1],
+  },
+    {
+    id: 'review-7',
+    image: '/reviews/client-7.png',
+    name: 'Defanny',
+    comment:
+      "Bagus cara ngajarinnya, dari yang awal gatau pelajaran informatika karena baru naik smp, jadi tau. Dan cara ngajarnya juga pelan' ga buru' jadi lebih bikin lebih paham.Top deh.",
+    stars: [1, 1, 1, 1, 1],
+  },
+    {
+    id: 'review-8',
+    image: '/reviews/client-8.png',
+    name: 'Aura',
+    comment:
+      "Pak Dani cara ngajarnya praktek jadi seru kalo belajar ,ngajar nya juga dibuat mudah karena dia ngajar pelan -pelan tapi pasti.",
+    stars: [1, 1, 1, 1],
+  },
+    {
+    id: 'review-9',
+    image: '/reviews/client-9.png',
+    name: 'ferlita puspita ayumi',
+    comment:
+      "awal sebelum kak dani masuk di indriasana itu informatika nya belum berjalan kaya belum ada guru yang bener' gtu kak itu kalo ga salah waktu kelas 8, terus sehabis nya kak dani masuk itu informatika nya berjalan kalo di ajari kak dani gtu langsung agak paham pembelajaran informatika apalagi pas di lab itu di ajari komputer cara nya dan juga kak dani orang nya asik apalagi pas di ajari itu pelan' tapi paham.",
+    stars: [1, 1, 1, 1, 1],
+  },
 ]
 
 // Projects
