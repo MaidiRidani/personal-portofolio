@@ -234,6 +234,14 @@ export const reviewsData = [
       "awal sebelum kak dani masuk di indriasana itu informatika nya belum berjalan kaya belum ada guru yang bener' gtu kak itu kalo ga salah waktu kelas 8, terus sehabis nya kak dani masuk itu informatika nya berjalan kalo di ajari kak dani gtu langsung agak paham pembelajaran informatika apalagi pas di lab itu di ajari komputer cara nya dan juga kak dani orang nya asik apalagi pas di ajari itu pelan' tapi paham.",
     stars: [1, 1, 1, 1, 1],
   },
+    {
+    id: 'review-7',
+    image: '/avatar/client-6.png',
+    name: 'Nicolas Azamt',
+    comment:
+      "Selama aku sekolah, jarang banget ketemu guru kayak Kak Dani, meskipun jarang teori dan lebih ke praktek tapi sangat mudah dipahami. Andai semua guru kayak Kak Dani pasti kita semangat sekolah.",
+    stars: [1, 1, 1, 1, 1],
+  },
 ]
 
 // Projects
