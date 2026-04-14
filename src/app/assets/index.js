@@ -235,7 +235,7 @@ export const reviewsData = [
     stars: [1, 1, 1, 1, 1],
   },
     {
-    id: 'review-7',
+    id: 'review-10',
     image: '/avatar/client-6.png',
     name: 'Nicolas Azamt',
     comment:

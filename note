@@ -1,1 +1,43 @@
 avatar : https://www.flaticon.com/packs/people-40
+
+git status
+git add .
+git commit -m "clear message"
+git push
+
+
+
+# Supabase RLS Note
+
+* Setelah aktifkan RLS:
+
+  ```sql
+  alter table reviewme enable row level security;
+  ```
+
+  → semua akses ke table ditolak (data tidak muncul di frontend)
+
+* Solusi:
+
+  **Allow SELECT (tampil di frontend)**
+
+  ```sql
+  create policy "Allow read for all"
+  on reviewme
+  for select
+  to public
+  using (true);
+  ```
+
+  **Allow INSERT (kirim form)**
+
+  ```sql
+  create policy "Allow insert for all"
+  on reviewme
+  for insert
+  to public
+  with check (true);
+  ```
+
+* Intinya:
+  RLS aktif = default semua ditolak → harus buat policy manual

@@ -12,3 +12,47 @@
 html{
   scroll-behavior: smooth !important;
 }
+
+.custom-slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 9999px;
+  outline: none;
+  background: transparent;
+}
+
+/* THUMB */
+.custom-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--color-active); /* ✅ */
+  cursor: pointer;
+  border: none;
+  margin-top: -6px;
+}
+
+/* TRACK */
+.custom-slider::-webkit-slider-runnable-track {
+  height: 6px;
+  border-radius: 9999px;
+  background: linear-gradient(
+    to right,
+    var(--color-active) 0%,        /* ✅ */
+    var(--color-active) var(--value),
+    #444 var(--value),
+    #444 100%
+  );
+}
+
+/* GLOBAL THEME */
+:root {
+  --color-active: #facc15;
+}
+
+.dark {
+  --color-active: #fecaca;
+}
